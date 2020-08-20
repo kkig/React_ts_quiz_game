@@ -1,5 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components';
-import BGImage from './images/bg_donny-jiang.jpg';
+import BGImage from './images/bg_sarah-boudreau.jpg';
 
 export const GlobalStyle = createGlobalStyle`
     * {
@@ -50,9 +50,28 @@ export const Wrapper = styled.div`
         filter: drop-shadow(2px 2px #f2ae2e);
         font-size: 70px;
         font-weight: 400;
+        letter-spacing: .075em;
         text-align: center;
         margin: 20px;
 
         color: transparent;
+    }
+
+    .start, .next {
+        cursor: pointer;
+        background: linear-gradient(180deg, #ffb691, orangered);
+        border: 2px solid orangered;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        height: 3em;
+        margin: 1.5em 0;
+        padding: 0 3em;
+
+        text-transform: uppercase;
+        letter-spacing: .05em;
+    }
+
+    .start {
+        max-width: 200px;
     }
 `;
