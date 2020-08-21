@@ -5,6 +5,7 @@ export const GlobalStyle = createGlobalStyle`
     * {
         box-sizing: border-box;
         font-family: 'Roboto', sans-serif;
+        color: #262626;
     }
 
     html {
@@ -19,6 +20,8 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0 20px;
         display: flex;
         justify-content: center;
+
+        font-size: 16px;
     }
 
 `;
@@ -33,13 +36,16 @@ export const Wrapper = styled.div`
     }
 
     .score {
-        color: #fff;
-        font-size: 2rem;
+        color: darkslategrey;
+        font-size: 1.5rem;
         margin: 0;
+        text-transform: uppercase;
+        text-decoration-line: underline;
     }
 
     h1 {
-        font-family: 'Roboto Slab', serif;
+        font-family: 'Black Ops One', cursive;
+        /*
         background-image: linear-gradient(180deg, #fff, #face1e);
         background-size: 100%;
         background-clip: text;
@@ -47,20 +53,21 @@ export const Wrapper = styled.div`
         -webkit-text-fill-color: transparent;
         -moz-background-clip: text;
         -moz-background-fill-color: transparent;
-        filter: drop-shadow(2px 2px #f2ae2e);
+        */
+        filter: drop-shadow(2px 2px seagreen);
         font-size: 70px;
         font-weight: 400;
         letter-spacing: .075em;
         text-align: center;
         margin: 20px;
 
-        color: transparent;
+        color: mediumaquamarine;
     }
 
     .start, .next {
         cursor: pointer;
-        background: linear-gradient(180deg, #ffb691, orangered);
-        border: 2px solid orangered;
+        background: linear-gradient(180deg, orange, orangered);
+        border: none;
         box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
         border-radius: 10px;
         height: 3em;

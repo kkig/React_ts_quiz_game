@@ -27,8 +27,6 @@ const App = () => {
   const [score, setScore] = useState(0);
   const [gameOver, setGameOver] = useState(true);
 
-  console.log(questions);
-
   const startTrivia = async () => {
     setLoading(true);
     setGameOver(false);
@@ -65,7 +63,7 @@ const App = () => {
         question: questions[number].question,
         user_answer: userAnswer,
         correct: isCorrect,
-        correctAnswer: questions[number].correct_answer,
+         correctAnswer: questions[number].correct_answer,
       };
       setUserAnswers((prev) => [...prev, answerObject]);
     }
@@ -93,9 +91,11 @@ const App = () => {
         ) : null}
 
         {!gameOver ? (
-          <p className="score">Score: {score > 0 ? score : 0}</p>
+          <p className="score">Total Score: {score > 0 ? score : 0}</p>
         ) : null}
+
         {loading ? <p>Loading Questions...</p> : null}
+
         {!loading && !gameOver && (
           <QuestionCards
             questionNr={number + 1}
