@@ -36,11 +36,11 @@ export const Wrapper = styled.div`
   align-items: center;
 
   > p {
-    color: #262626;
+    color: #fff;
   }
 
   .score {
-    color: darkslategrey;
+    color: #fff;
     font-size: 1.5rem;
     margin: 0;
     text-transform: uppercase;
@@ -58,14 +58,14 @@ export const Wrapper = styled.div`
         -moz-background-clip: text;
         -moz-background-fill-color: transparent;
         */
-    filter: drop-shadow(2px 2px grey);
+    filter: drop-shadow(2px 2px orangered);
     font-size: 4rem;
     font-weight: 400;
     letter-spacing: 0.075em;
     text-align: center;
     margin: 2rem;
 
-    color: darkgrey;
+    color: darkorange;
   }
 
   .start,
