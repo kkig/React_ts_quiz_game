@@ -1,5 +1,5 @@
-import styled, { createGlobalStyle } from 'styled-components';
-import BGImage from './images/bg_sarah-boudreau.jpg';
+import styled, { createGlobalStyle } from "styled-components";
+import BGImage from "./images/bg_jr-korpa.jpg";
 
 export const GlobalStyle = createGlobalStyle`
     * {
@@ -14,7 +14,11 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
+        
         background-image: url(${BGImage});
+        /*
+        background-color: oldlace;
+        */
         background-size: cover;
         margin: 0;
         padding: 0 20px;
@@ -27,25 +31,25 @@ export const GlobalStyle = createGlobalStyle`
 `;
 
 export const Wrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    > p {
-        color: #fff;
-    }
+  > p {
+    color: #262626;
+  }
 
-    .score {
-        color: darkslategrey;
-        font-size: 1.5rem;
-        margin: 0;
-        text-transform: uppercase;
-        text-decoration-line: underline;
-    }
+  .score {
+    color: darkslategrey;
+    font-size: 1.5rem;
+    margin: 0;
+    text-transform: uppercase;
+    text-decoration-line: underline;
+  }
 
-    h1 {
-        font-family: 'Black Ops One', cursive;
-        /*
+  h1 {
+    font-family: "Black Ops One", cursive;
+    /*
         background-image: linear-gradient(180deg, #fff, #face1e);
         background-size: 100%;
         background-clip: text;
@@ -54,31 +58,32 @@ export const Wrapper = styled.div`
         -moz-background-clip: text;
         -moz-background-fill-color: transparent;
         */
-        filter: drop-shadow(2px 2px seagreen);
-        font-size: 70px;
-        font-weight: 400;
-        letter-spacing: .075em;
-        text-align: center;
-        margin: 20px;
+    filter: drop-shadow(2px 2px grey);
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 0.075em;
+    text-align: center;
+    margin: 2rem;
 
-        color: mediumaquamarine;
-    }
+    color: darkgrey;
+  }
 
-    .start, .next {
-        cursor: pointer;
-        background: linear-gradient(180deg, orange, orangered);
-        border: none;
-        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
-        border-radius: 10px;
-        height: 3em;
-        margin: 1.5em 0;
-        padding: 0 3em;
+  .start,
+  .next {
+    cursor: pointer;
+    background: linear-gradient(180deg, orange, orangered);
+    border: none;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    height: 3em;
+    margin: 1.5em 0;
+    padding: 0 3em;
 
-        text-transform: uppercase;
-        letter-spacing: .05em;
-    }
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
 
-    .start {
-        max-width: 200px;
-    }
+  .start {
+    max-width: 200px;
+  }
 `;
